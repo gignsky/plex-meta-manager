@@ -29,6 +29,9 @@ libraries:                       # This is called out once within the config.yml
       mass_user_rating_update: tmdb
   Test TV Shows:
     overlay_files:
+      - pmm: ribbon
+      - pmm: studio
+      - pmm: resolution
       - pmm: ratings
         template_variables:
           rating1: critic
@@ -44,6 +47,12 @@ libraries:                       # This is called out once within the config.yml
           rating2: audience
           rating1_image: imdb
           rating2_image: tmdb
+    operations:
+      mass_critic_rating_update: imdb
+      mass_audience_rating_update: mdb_tomatoesaudience
+      mass_user_rating_update: tmdb
+      mass_episode_critic_rating_update: imdb
+      mass_episode_audience_rating_update: tmdb
 playlist_files:
 - pmm: playlist                  # This is a file within PMM's defaults folder
   template_variables:

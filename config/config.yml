@@ -5,6 +5,7 @@ libraries:                       # This is called out once within the config.yml
     collection_files:
     - pmm: basic                 # This is a file within PMM's defaults folder
     - pmm: imdb                  # This is a file within PMM's defaults folder
+    - file: config/Movies.yml
       # see the wiki for how to use local files, folders, URLs, or files from git
     overlay_path:
     - remove_overlays: false     # Set this to true to remove all overlays

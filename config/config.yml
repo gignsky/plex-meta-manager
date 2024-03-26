@@ -10,7 +10,8 @@ libraries:                       # This is called out once within the config.yml
     remove_overlays: false            ## <<< ADD THIS LINE
     overlay_files:                         ## <<< ADD THIS LINE
       - pmm: resolution
-      - pmm: languages
+      - pmm: studio
+      #- pmm: languages
 playlist_files:
 - pmm: playlist                  # This is a file within PMM's defaults folder
   template_variables:

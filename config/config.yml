@@ -7,10 +7,9 @@ libraries:                       # This is called out once within the config.yml
     - pmm: imdb                  # This is a file within PMM's defaults folder
     - file: config/Movies.yml
       # see the wiki for how to use local files, folders, URLs, or files from git
-    overlay_path:
-    - remove_overlays: false     # Set this to true to remove all overlays
-    - pmm: ribbon                # This is a file within PMM's defaults folder
-      # see the wiki for how to use local files, folders, URLs, or files from git
+    remove_overlays: false            ## <<< ADD THIS LINE
+    overlay_files:                         ## <<< ADD THIS LINE
+      - pmm: resolution
 playlist_files:
 - pmm: playlist                  # This is a file within PMM's defaults folder
   template_variables:

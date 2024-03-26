@@ -5,13 +5,45 @@ libraries:                       # This is called out once within the config.yml
     collection_files:
     - pmm: basic                 # This is a file within PMM's defaults folder
     - pmm: imdb                  # This is a file within PMM's defaults folder
-    - file: config/Movies.yml
+    - pmm: actor
+    - pmm: genre
+    # - file: config/Movies.yml
       # see the wiki for how to use local files, folders, URLs, or files from git
     remove_overlays: false            ## <<< ADD THIS LINE
     overlay_files:                         ## <<< ADD THIS LINE
       - pmm: resolution
       - pmm: studio
+      - pmm: ribbon
       #- pmm: languages
+      - pmm: ratings
+        template_variables:
+          rating1: critic
+          rating2: audience
+          rating3: user
+          rating1_image: imdb
+          rating2_image: rt_popcorn
+          rating3_image: tmdb
+    operations:
+      mass_critic_rating_update: imdb
+      mass_audience_rating_update: mdb_tomatoesaudience
+      mass_user_rating_update: tmdb
+  Test TV Shows:
+    overlay_files:
+      - pmm: ratings
+        template_variables:
+          rating1: critic
+          rating2: audience
+          rating3: user
+          rating1_image: imdb
+          rating2_image: rt_popcorn
+          rating3_image: tmdb
+      - pmm: ratings
+        template_variables:
+          builder_level: episode
+          rating1: critic
+          rating2: audience
+          rating1_image: imdb
+          rating2_image: tmdb
 playlist_files:
 - pmm: playlist                  # This is a file within PMM's defaults folder
   template_variables:

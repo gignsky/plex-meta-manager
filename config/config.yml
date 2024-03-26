@@ -70,9 +70,9 @@ plex:                            # Can be individually specified per library as 
   token: GVjza-pnmKeHUif2-_BR
   timeout: 60
   db_cache:
-  clean_bundles: false
-  empty_trash: false
-  optimize: false
+  clean_bundles: true
+  empty_trash: true
+  optimize: true
 tmdb:                            # REQUIRED for the script to run
   apikey: 608f026758c0e8b0bc93a8cc6db1bb42
   language: en

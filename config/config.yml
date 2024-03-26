@@ -1,7 +1,7 @@
 ## This file is a template remove the .template to use the file
 
 libraries:                       # This is called out once within the config.yml file
-  Movies:                        # These are names of libraries in your Plex
+  Test Movies:                        # These are names of libraries in your Plex
     collection_files:
       - pmm: basic               # This is a file within PMM's defaults folder
       - pmm: imdb                # This is a file within PMM's defaults folder
@@ -10,23 +10,6 @@ libraries:                       # This is called out once within the config.yml
       - remove_overlays: false   # Set this to true to remove all overlays
       - pmm: ribbon              # This is a file within PMM's defaults folder
       # see the wiki for how to use local files, folders, URLs, or files from git
-  TV Shows:
-    collection_files:
-      - pmm: basic               # This is a file within PMM's defaults folder
-      - pmm: imdb                # This is a file within PMM's defaults folder
-      # see the wiki for how to use local files, folders, URLs, or files from git
-    overlay_path:
-      - remove_overlays: false   # Set this to true to remove all overlays
-      - pmm: ribbon              # This is a file within PMM's defaults folder
-      # see the wiki for how to use local files, folders, URLs, or files from git
-  Anime:
-    collection_files:
-      - pmm: basic               # This is a file within PMM's defaults folder
-      - pmm: anilist             # This is a file within PMM's defaults folder
-      # see the wiki for how to use local files, folders, URLs, or files from git
-  Music:
-    collection_files:
-      - file: config/Music.yml   # This is a local file THAT YOU MIGHT CREATE
 playlist_files:
   - pmm: playlist                # This is a file within PMM's defaults folder
     template_variables:
